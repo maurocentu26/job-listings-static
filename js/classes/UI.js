@@ -50,10 +50,12 @@ class UI{
         const jobRole = document.createElement("span");
         jobRole.className = "tags__item";
         jobRole.dataset.type = "role";
+        jobRole.dataset.content = role;
         jobRole.textContent = role;
 
         const jobLevel = document.createElement("span");
         jobLevel.className = "tags__item";
+        jobLevel.dataset.content = level;
         jobLevel.dataset.type = "level";
         jobLevel.textContent = level;
 
@@ -64,6 +66,7 @@ class UI{
             const jobLanguage = document.createElement("span");
             jobLanguage.className = "tags__item";
             jobLanguage.dataset.type = "languages";
+            jobLanguage.dataset.content = language;
             jobLanguage.textContent = language;
 
             jobTags.appendChild(jobLanguage);
@@ -71,6 +74,7 @@ class UI{
         tools.forEach( tool => {
             const jobTool = document.createElement("span");
             jobTool.className = "tags__item";
+            jobTool.dataset.content = tool;
             jobTool.dataset.type = "tools";
             jobTool.textContent = tool;
 
