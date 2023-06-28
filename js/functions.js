@@ -29,7 +29,7 @@ export async function filterJobs(e) {
     const tag = e.target;
 
     if(tag.classList.contains("tags__item")) {
-        ui.putFilter(tag.textContent, tag.dataset.type);
+        ui.putFilter(tag.dataset.content, tag.dataset.type);
 
         filterJobsFunction(extractTags());
     }
